@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM </title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Shopping List</h1>
+          <p>Need to buy</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search for items..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">To buy</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Milk</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Eggs</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Skyr</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Lettuce</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+            <input type="checkbox" id="hide"/>
+            <label for="hide">Hide all items</label>
+
+
+	    	<input type="text" placeholder="Add an item ..." />
+	    	<button>Add</button>
+	    </form>
+        <button onclick="clearInterval(intId)">Stop shopping timer </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
